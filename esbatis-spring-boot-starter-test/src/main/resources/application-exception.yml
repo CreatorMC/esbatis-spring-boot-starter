@@ -1,0 +1,8 @@
+esbatis:
+  datasource:
+    driver: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://xxx.xxx.xxx.xxx:xxxx/xxx
+    username: 用户名
+    password: 密码
+    mapper-locations: classpath*:mapper/*.xml
+    base-dao-package: com.creator.esbatis.spring.boot.test.dao
