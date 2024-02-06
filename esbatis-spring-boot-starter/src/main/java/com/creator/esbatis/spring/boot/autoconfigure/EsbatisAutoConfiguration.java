@@ -43,9 +43,9 @@ public class EsbatisAutoConfiguration implements InitializingBean {
     @ConditionalOnMissingBean
     public Connection connection(EsbatisProperties esbatisProperties) {
         try {
-            Class.forName(esbatisProperties.getDriver());
-            return DriverManager.getConnection(esbatisProperties.getUrl(), esbatisProperties.getUsername(), esbatisProperties.getPassword());
-        } catch (ClassNotFoundException | SQLException e) {
+//            Class.forName(esbatisProperties.getDriver());
+            return DriverManager.getConnection(esbatisProperties.getUrl());
+        } catch (SQLException e) {
             e.printStackTrace();
         }
         return null;

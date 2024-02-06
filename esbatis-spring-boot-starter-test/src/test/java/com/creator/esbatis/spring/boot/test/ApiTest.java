@@ -1,7 +1,7 @@
 package com.creator.esbatis.spring.boot.test;
 
 import com.creator.esbatis.spring.boot.test.dao.IUserDao;
-import com.creator.esbatis.spring.boot.test.entity.User;
+import com.creator.esbatis.spring.boot.test.entity.Article;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,8 +18,8 @@ public class ApiTest {
 
     @Test
     public void test_queryUserInfoById() {
-        User user = userDao.queryUserInfoById(1L);
-        System.out.println(user.toString());
+        Article article = userDao.queryUserInfoById(3L);
+        System.out.println(article.toString());
     }
 
 }
